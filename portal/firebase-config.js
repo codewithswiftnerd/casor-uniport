@@ -1,18 +1,17 @@
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics"; 
-
 const firebaseConfig = {
-  apiKey: "AIzaSyAgjiykCE4jNOcvn0c5TbGLNs8GLslSYmY",
-  authDomain: "casor-uniport.firebaseapp.com",
-  projectId: "casor-uniport",
-  storageBucket: "casor-uniport.firebasestorage.app",
-  messagingSenderId: "351818447461",
-  appId: "1:351818447461:web:581db762de75ebc825248c",
-  measurementId: "G-DP4D6JLH0Q"
+  apiKey: "AIzaSyAiACEdrFknfxa43WNubTV8A96YaNKgeyc",
+  authDomain: "casorwebsite.firebaseapp.com",
+  projectId: "casorwebsite",
+  storageBucket: "casorwebsite.appspot.com",
+  messagingSenderId: "408409784355",
+  appId: "1:408409784355:web:9080641fc27a2e5ecc7196",
+  measurementId: "G-Q0KLLN365P"
 };
 
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
+const db = firebase.firestore();
+const storage = firebase.storage();
 
 
 
